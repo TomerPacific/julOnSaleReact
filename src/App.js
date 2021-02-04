@@ -5,15 +5,25 @@ import Categories from './Categories';
 import './App.css';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {shouldShowSpinner: true}
+    this.spinnerHandler = this.spinnerHandler.bind(this);
+  }
+  spinnerHandler() {
+    this.setState({
+      ...this.state, shouldShowSpinner: false
+    })
+  }
   render() {
     return <div className="App">
     <header className="App-header">
       What's On Sale @ Jul
     </header>
     <DateHeader />
-    <Spinner />
+    <Spinner status = {this.state.shouldShowSpinner}/>
     <main>
-      <Categories />
+      <Categories spinnerHandler = {this.spinnerHandler}/>
     </main>
   </div>
   }
