@@ -3,11 +3,15 @@ import './Spinner.css';
 
 class Spinner extends React.Component {
   render() {
-    return <div className="loader">
+	  const shouldShow = this.props.status;
+	  if (shouldShow) {
+		return <div className="loader">
 			<div>
 			</div>
 			<h4>מביא פריטים...</h4>
-		</div>
+			</div>
+	  }
+	  return null;
   }
 }
 
