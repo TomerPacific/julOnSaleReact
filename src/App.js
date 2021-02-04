@@ -22,9 +22,7 @@ class App extends React.Component {
     </header>
     <DateHeader />
     <Spinner status = {this.state.shouldShowSpinner}/>
-    <main>
-      <Categories spinnerHandler = {this.spinnerHandler}/>
-    </main>
+    <Categories spinnerHandler = {this.spinnerHandler}/>
   </div>
   }
 }
