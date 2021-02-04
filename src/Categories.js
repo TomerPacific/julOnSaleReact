@@ -7,7 +7,7 @@ class Categories extends React.Component {
     constructor() {
         super();
         this.state = {categories : [], isFetchingData: false};
-        this.fetchData()
+        this.fetchData();
     }
     componentDidMount() {
         let self = ReactDOM.findDOMNode(this);
@@ -23,12 +23,18 @@ class Categories extends React.Component {
             this.setState({
                 ...this.state, isFetching: false
             });
+            if (this.props) {
+                this.props.spinnerHandler();
+            }
             this.buildCategories(self, result.message);
         })
         .catch(error => {
             this.setState({
                 ...this.state, isFetching: false
             });
+            if (this.props) {
+                this.props.spinnerHandler();
+            }
            
         })
     }
@@ -54,7 +60,7 @@ class Categories extends React.Component {
         }
     }
     render() {
-        return <div className="category"></div>
+        return <div className="categories"></div>
     }
 }
 
