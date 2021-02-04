@@ -12,7 +12,12 @@ class Categories extends React.Component {
     }
     componentDidMount() {
         let self = ReactDOM.findDOMNode(this);
-        this.fetchData(self);
+        if (this.state.categories.length === 0) {
+            this.fetchData(self);
+        } else {
+            this.buildCategories(self, this.state.categories);
+        }
+        
     }
     fetchData(self) {
         this.setState({
@@ -22,7 +27,7 @@ class Categories extends React.Component {
         .then(response => response.json())
         .then(result => {
             this.setState({
-                ...this.state, isFetching: false
+                ...this.state, isFetching: false, categories: result.message
             });
             if (this.props) {
                 this.props.spinnerHandler();
