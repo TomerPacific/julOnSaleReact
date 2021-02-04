@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/TomerPacific/julOnSaleReact/static/css/main.aa1bddab.chunk.css",
-    "main.js": "/TomerPacific/julOnSaleReact/static/js/main.993be583.chunk.js",
-    "main.js.map": "/TomerPacific/julOnSaleReact/static/js/main.993be583.chunk.js.map",
-    "runtime-main.js": "/TomerPacific/julOnSaleReact/static/js/runtime-main.6d3822cf.js",
-    "runtime-main.js.map": "/TomerPacific/julOnSaleReact/static/js/runtime-main.6d3822cf.js.map",
-    "static/js/2.f63efed5.chunk.js": "/TomerPacific/julOnSaleReact/static/js/2.f63efed5.chunk.js",
-    "static/js/2.f63efed5.chunk.js.map": "/TomerPacific/julOnSaleReact/static/js/2.f63efed5.chunk.js.map",
-    "static/js/3.95d8d7ff.chunk.js": "/TomerPacific/julOnSaleReact/static/js/3.95d8d7ff.chunk.js",
-    "static/js/3.95d8d7ff.chunk.js.map": "/TomerPacific/julOnSaleReact/static/js/3.95d8d7ff.chunk.js.map",
-    "index.html": "/TomerPacific/julOnSaleReact/index.html",
-    "static/css/main.aa1bddab.chunk.css.map": "/TomerPacific/julOnSaleReact/static/css/main.aa1bddab.chunk.css.map",
-    "static/js/2.f63efed5.chunk.js.LICENSE.txt": "/TomerPacific/julOnSaleReact/static/js/2.f63efed5.chunk.js.LICENSE.txt"
+    "main.css": "/julOnSaleReact/static/css/main.aa1bddab.chunk.css",
+    "main.js": "/julOnSaleReact/static/js/main.993be583.chunk.js",
+    "main.js.map": "/julOnSaleReact/static/js/main.993be583.chunk.js.map",
+    "runtime-main.js": "/julOnSaleReact/static/js/runtime-main.e14887d9.js",
+    "runtime-main.js.map": "/julOnSaleReact/static/js/runtime-main.e14887d9.js.map",
+    "static/js/2.f63efed5.chunk.js": "/julOnSaleReact/static/js/2.f63efed5.chunk.js",
+    "static/js/2.f63efed5.chunk.js.map": "/julOnSaleReact/static/js/2.f63efed5.chunk.js.map",
+    "static/js/3.95d8d7ff.chunk.js": "/julOnSaleReact/static/js/3.95d8d7ff.chunk.js",
+    "static/js/3.95d8d7ff.chunk.js.map": "/julOnSaleReact/static/js/3.95d8d7ff.chunk.js.map",
+    "index.html": "/julOnSaleReact/index.html",
+    "static/css/main.aa1bddab.chunk.css.map": "/julOnSaleReact/static/css/main.aa1bddab.chunk.css.map",
+    "static/js/2.f63efed5.chunk.js.LICENSE.txt": "/julOnSaleReact/static/js/2.f63efed5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d3822cf.js",
+    "static/js/runtime-main.e14887d9.js",
     "static/js/2.f63efed5.chunk.js",
     "static/css/main.aa1bddab.chunk.css",
     "static/js/main.993be583.chunk.js"
