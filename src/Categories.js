@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './Categories.css';
 
 const endpoint = "https://jul-on-sale.herokuapp.com/jul";
 
