@@ -24,9 +24,6 @@ class App extends React.Component {
         this.setState({
             ...this.state, shouldShowSpinner: false, categories: result.message
         });
-        if (this.props) {
-            this.props.spinnerHandler();
-        }
         this.buildCategories(result.message);
     })
     .catch(error => {
