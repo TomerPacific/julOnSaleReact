@@ -1,0 +1,10 @@
+.category, .item {
+    width: 200px;
+    height: 200px;
+  }
+  
+  
+.container:hover {
+    outline-style: solid;
+    outline-color: #25DDF4;
+}
