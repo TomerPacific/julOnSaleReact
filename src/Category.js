@@ -1,5 +1,6 @@
 import React from 'react';
 import DateHeader from './DateHeader';
+import Spinner from './Spinner';
 
 const endpoint = "https://jul-on-sale.herokuapp.com/category/";
 
