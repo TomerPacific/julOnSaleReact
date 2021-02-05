@@ -2,6 +2,8 @@ import React from 'react';
 import DateHeader from './DateHeader';
 import Spinner from './Spinner';
 import './App.css';
+import { BrowserRouter, Link, Route } from 'react-router-dom';
+import Category from './Category';
 
 const endpoint = "https://jul-on-sale.herokuapp.com/jul";
 
@@ -45,9 +47,10 @@ class App extends React.Component {
         header.innerHTML = category.name;
         image.src = 'https://github.com/TomerPacific/julOnSale/blob/master/assets/' + category.image + '.png?raw=true';
         image.setAttribute('class', 'category');
-        anchor.href = "https://tomerpacific.github.io/julOnSale/categories/" + category.image + "/" + category.image + ".html";
+        //anchor.href = "https://tomerpacific.github.io/julOnSale/categories/" + category.image + "/" + category.image + ".html";
+        anchor.href = "categories/" + category.name;
         anchor.innerHTML = '<img src=' + image.src + ' class="category" alt=' + category.name + ' title=' + category.name + '>';
-
+        
         div.appendChild(header);
         div.appendChild(anchor);
         div.setAttribute('class', 'container');
@@ -61,7 +64,12 @@ class App extends React.Component {
     </header>
     <DateHeader />
     <Spinner status = {this.state.shouldShowSpinner}/>
-    <div className="categories"></div>
+    <div className="categories">
+      <BrowserRouter>
+        {this.state.categories.map(category => (<Link to={'categories/' + category.name} />))}
+        <Route path="categories/:name" componet={Category}/>
+      </BrowserRouter>
+    </div>
   </div>
   }
 }
