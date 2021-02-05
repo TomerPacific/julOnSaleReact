@@ -14,7 +14,7 @@ class App extends React.Component {
     if (this.state.categories.length === 0) {
         this.fetchData();
     } else {
-        this.buildCategories();
+        this.buildCategories(this.state.categories);
     }  
   }
   fetchData() {

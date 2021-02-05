@@ -17,7 +17,7 @@
   grid-gap: 2%;
 }
 
-.category, .item {
+.category {
   width: 200px;
   height: 200px;
 }
