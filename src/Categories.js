@@ -49,12 +49,12 @@ class Categories extends React.Component {
         for (let index = 0; index < categories.length; index++)
         {
             let category = categories[index];
-            let categoryHref = "https://tomerpacific.github.io/julOnSale/categories/" + category.image + "/" + category.image + ".html";
-            let imageHref = 'https://github.com/TomerPacific/julOnSale/blob/master/assets/' + category.image + '.png?raw=true';
+            //let categoryHref = "https://tomerpacific.github.io/julOnSale/categories/" + category.image + "/" + category.image + ".html";
+            //let imageHref = 'https://github.com/TomerPacific/julOnSale/blob/master/assets/' + category.image + '.png?raw=true';
             React.createElement('Category', {
                 categoryName: category.name,
-                categoryLink: categoryHref,
-                imageSrc: imageHref
+                categoryLink: "",
+                imageSrc: ""
             }, self);
             // let div = document.createElement('div');
             // let header = document.createElement('h3');
