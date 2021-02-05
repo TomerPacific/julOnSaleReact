@@ -46,6 +46,7 @@ class Categories extends React.Component {
         })
     }
     buildCategories(self, categories) {
+        const root = document.querySelector('.categories');
         for (let index = 0; index < categories.length; index++)
         {
             let category = categories[index];
@@ -58,7 +59,7 @@ class Categories extends React.Component {
                     imageSrc: imageHref
                 });
 
-                self.appendChild(categoryComponent);
+                root.appendChild(categoryComponent);
             } catch(exception) {
                 console.log(exception);
             }
