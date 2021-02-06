@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/julOnSaleReact/static/css/main.4d1990de.chunk.css",
-    "main.js": "/julOnSaleReact/static/js/main.e795ae50.chunk.js",
-    "main.js.map": "/julOnSaleReact/static/js/main.e795ae50.chunk.js.map",
+    "main.js": "/julOnSaleReact/static/js/main.1a1fa98a.chunk.js",
+    "main.js.map": "/julOnSaleReact/static/js/main.1a1fa98a.chunk.js.map",
     "runtime-main.js": "/julOnSaleReact/static/js/runtime-main.d3c2c738.js",
     "runtime-main.js.map": "/julOnSaleReact/static/js/runtime-main.d3c2c738.js.map",
     "static/js/2.a996160d.chunk.js": "/julOnSaleReact/static/js/2.a996160d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d3c2c738.js",
     "static/js/2.a996160d.chunk.js",
     "static/css/main.4d1990de.chunk.css",
-    "static/js/main.e795ae50.chunk.js"
+    "static/js/main.1a1fa98a.chunk.js"
   ]
 }
