@@ -48,7 +48,7 @@ class App extends React.Component {
         image.src = 'https://github.com/TomerPacific/julOnSale/blob/master/assets/' + category.image + '.png?raw=true';
         image.setAttribute('class', 'category');
         //anchor.href = "https://tomerpacific.github.io/julOnSale/categories/" + category.image + "/" + category.image + ".html";
-        anchor.href = "categories/" + category.image;
+        anchor.href = "categories" + category.image;
         anchor.innerHTML = '<img src=' + image.src + ' class="category" alt=' + category.name + ' title=' + category.name + '>';
         
         div.appendChild(header);
