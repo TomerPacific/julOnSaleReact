@@ -66,7 +66,6 @@ class App extends React.Component {
     <DateHeader />
     <Spinner status = {this.state.shouldShowSpinner}/>
     <div className="categories">
-      <Route path="categories/:image" component={Category}/>
     </div>
   </div>
   }
