@@ -1,5 +1,6 @@
 import React from 'react';
 import './DateHeader.css';
+import { withRouter } from "react-router";
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -20,4 +21,4 @@ class DateHeader extends React.Component {
 
 
 
-export default DateHeader;
+export default withRouter(DateHeader);
