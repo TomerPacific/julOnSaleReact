@@ -1,23 +1,49 @@
-import React from 'react';
-import './DateHeader.css';
+import React from "react";
+import "./DateHeader.css";
+import { withRouter } from "react-router";
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
 
 class DateHeader extends React.Component {
   constructor() {
     super();
-    this.state = {date : new Date()};
+    this.state = { date: new Date() };
   }
   formatDate() {
-    return "For the day of " + months[this.state.date.getMonth()] + ' ' + this.state.date.getDate() + ', ' + this.state.date.getFullYear(); 
+    return (
+      "For the day of " +
+      months[this.state.date.getMonth()] +
+      " " +
+      this.state.date.getDate() +
+      ", " +
+      this.state.date.getFullYear()
+    );
   }
   render() {
-    return <div className="DateHeader">
-    <p>{this.formatDate()}</p>
-  </div>
+    return (
+      <>
+        <header className="App-header">
+          What's On Sale @ Jul {this.props?.match?.params?.categoryName}
+        </header>
+        <div className="DateHeader">
+          <p>{this.formatDate()}</p>
+        </div>
+      </>
+    );
   }
 }
 
-
-
-export default DateHeader;
+export default withRouter(DateHeader);
