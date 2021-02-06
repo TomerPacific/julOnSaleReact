@@ -1,6 +1,7 @@
 import React from 'react';
 import DateHeader from './DateHeader';
 import Spinner from './Spinner';
+import { withRouter } from "react-router";
 
 const endpoint = "https://jul-on-sale.herokuapp.com/category/";
 
@@ -70,4 +71,4 @@ class Category extends React.Component {
 }
 
 
-export default Category;
+export default withRouter(Category);
