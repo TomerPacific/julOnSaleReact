@@ -8,9 +8,12 @@ import Category from './Category';
 const endpoint = "https://jul-on-sale.herokuapp.com/jul";
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {shouldShowSpinner: true, categories: []}
+  constructor(props) {
+    super(props);
+    this.state = {
+      shouldShowSpinner: true,
+      categories: []
+    }
   }
   componentDidMount() {
     if (this.state.categories.length === 0) {
@@ -48,7 +51,7 @@ class App extends React.Component {
         image.src = 'https://github.com/TomerPacific/julOnSale/blob/master/assets/' + category.image + '.png?raw=true';
         image.setAttribute('class', 'category');
         anchor.innerHTML = '<img src=' + image.src + ' class="category" alt=' + category.name + ' title=' + category.name + '>';
-        
+        anchor.href = "/categories" + category.image;
         div.appendChild(header);
         div.appendChild(anchor);
         div.setAttribute('class', 'container');
@@ -63,9 +66,7 @@ class App extends React.Component {
     <DateHeader />
     <Spinner status = {this.state.shouldShowSpinner}/>
     <div className="categories">
-      <BrowserRouter>
-        <Route path="categories/:image" componet={Category}/>
-      </BrowserRouter>
+      <Route path="categories/:image" component={Category}/>
     </div>
   </div>
   }
