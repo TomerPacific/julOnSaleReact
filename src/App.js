@@ -2,8 +2,7 @@ import React from 'react';
 import DateHeader from './DateHeader';
 import Spinner from './Spinner';
 import './App.css';
-import { BrowserRouter, Link, Route } from 'react-router-dom';
-import Category from './Category';
+import Routes from './Routes';
 
 const endpoint = "https://jul-on-sale.herokuapp.com/jul";
 
