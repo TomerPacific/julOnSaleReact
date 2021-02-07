@@ -10,7 +10,7 @@
     height: 200px;
   }
   
-  .container:hover {
+  .category:hover {
     outline-style: solid;
     outline-color: #25DDF4;
   }
