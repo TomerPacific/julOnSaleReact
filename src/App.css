@@ -12,20 +12,3 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.categories {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 2%;
-}
-
-.category {
-  width: 200px;
-  height: 200px;
-}
-
-.container:hover {
-  outline-style: solid;
-  outline-color: #25DDF4;
-}
