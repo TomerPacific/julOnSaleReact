@@ -13,12 +13,15 @@ class DateHeader extends React.Component {
     return "For the day of " + months[this.state.date.getMonth()] + ' ' + this.state.date.getDate() + ', ' + this.state.date.getFullYear(); 
   }
   render() {
-    return <div className="DateHeader">
-    <p>{this.formatDate()}</p>
-  </div>
+    return <>
+      <header className="App-header">
+        What's On Sale @ Jul {this.props?.match?.params?.categoryName}
+      </header>
+      <div className="DateHeader">
+        <p>{this.formatDate()}</p>
+      </div>
+  </>
   }
 }
-
-
 
 export default withRouter(DateHeader);

@@ -17,51 +17,27 @@ class App extends React.Component {
   componentDidMount() {
     if (this.state.categories.length === 0) {
         this.fetchData();
-    } else {
-        this.buildCategories(this.state.categories);
-    }  
+    }
   }
   fetchData() {
     fetch(endpoint)
     .then(response => response.json())
     .then(result => {
         this.setState({
-            ...this.state, shouldShowSpinner: false, categories: result.message
+            ...this.state, 
+            shouldShowSpinner: false, 
+            categories: result.message
         });
-        this.buildCategories(result.message);
     })
     .catch(error => {
         this.setState({
-            ...this.state, shouldShowSpinner: false
+            ...this.state, 
+            shouldShowSpinner: false
         });
     })
   } 
-  buildCategories(categories) {
-    const mainDiv = document.querySelector('.categories');
-    for (let index = 0; index < categories.length; index++)
-    {
-        let category = categories[index];
-        let div = document.createElement('div');
-        let header = document.createElement('h3');
-        let anchor = document.createElement('a');
-        let image = document.createElement('img');
-
-        header.innerHTML = category.name;
-        image.src = 'https://github.com/TomerPacific/julOnSale/blob/master/assets/' + category.image + '.png?raw=true';
-        image.setAttribute('class', 'category');
-        anchor.innerHTML = '<img src=' + image.src + ' class="category" alt=' + category.name + ' title=' + category.name + '>';
-        anchor.href = "/categories" + category.image;
-        div.appendChild(header);
-        div.appendChild(anchor);
-        div.setAttribute('class', 'container');
-        mainDiv.appendChild(div);
-    }
-  }
   render() {
     return <div className="App">
-    <header className="App-header">
-      What's On Sale @ Jul
-    </header>
     <DateHeader />
     <Spinner status = {this.state.shouldShowSpinner}/>
     <Routes categories={this.state.categories} />

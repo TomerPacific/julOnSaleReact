@@ -14,7 +14,6 @@ class Categories extends React.Component {
                     category.image +
                     ".png?raw=true"
                     }
-                    className="category"
                     alt={`/${category.name}`}
                     title={category.name}
                 />
