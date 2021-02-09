@@ -19,7 +19,7 @@ class Category extends React.Component {
         }
       }
       fetchData() {
-        fetch(endpoint + this.props.match.params.categoryName)
+        fetch(endpoint + this.props?.match?.params?.categoryName)
         .then(response => response.json())
         .then(result => {
             this.setState({

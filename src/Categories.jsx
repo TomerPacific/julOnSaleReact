@@ -6,7 +6,7 @@ class Categories extends React.Component {
         if (this.props.categories === null) return null;
         return <div className="categories">
             {this.props.categories && this.props.categories.map(category => (
-            <div key={`category-${category.name}`} className="category">
+            <div key={`category-${category.name}`} className={"container"}>
                 <h3>{category.name}</h3>
                 <a href={"/categories" + category.image}>
                 <img src={
