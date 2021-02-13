@@ -9,7 +9,7 @@ class Categories extends React.Component {
             <div className="container">
                 <div key={`category-${category.name}`} className={"category"}>
                     <h3>{category.name}</h3>
-                    <a href={"/categories" + category.image}>
+                    <a href={"/#/categories" + category.image}>
                     <img src={
                         "https://github.com/TomerPacific/julOnSale/blob/master/assets/" +
                         category.image +
