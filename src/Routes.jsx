@@ -7,7 +7,7 @@ const Routes = props => {
   return (
     <Switch>
       <Route exact path={"/home"} render={() => <Categories {...props} />} />
-      <Route exact path={"/#/categories/:categoryName"} render={() => <Category {...props} />} />
+      <Route exact path={"/categories/:categoryName"} render={() => <Category {...props} />} />
       <Route path="*" render={() => <Redirect to={"/home"} />} />
     </Switch>
   );
