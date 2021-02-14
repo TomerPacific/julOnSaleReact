@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/julOnSaleReact/static/css/main.24435804.chunk.css",
+    "main.css": "/julOnSaleReact/static/css/main.a28853e0.chunk.css",
     "main.js": "/julOnSaleReact/static/js/main.97d95588.chunk.js",
     "main.js.map": "/julOnSaleReact/static/js/main.97d95588.chunk.js.map",
     "runtime-main.js": "/julOnSaleReact/static/js/runtime-main.949d377e.js",
@@ -10,14 +10,14 @@
     "static/js/3.1f5c37f1.chunk.js": "/julOnSaleReact/static/js/3.1f5c37f1.chunk.js",
     "static/js/3.1f5c37f1.chunk.js.map": "/julOnSaleReact/static/js/3.1f5c37f1.chunk.js.map",
     "index.html": "/julOnSaleReact/index.html",
-    "static/css/main.24435804.chunk.css.map": "/julOnSaleReact/static/css/main.24435804.chunk.css.map",
+    "static/css/main.a28853e0.chunk.css.map": "/julOnSaleReact/static/css/main.a28853e0.chunk.css.map",
     "static/js/2.230df37d.chunk.js.LICENSE.txt": "/julOnSaleReact/static/js/2.230df37d.chunk.js.LICENSE.txt",
     "static/media/App.css": "/julOnSaleReact/static/media/Acme-Regular.9f25ca8b.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.949d377e.js",
     "static/js/2.230df37d.chunk.js",
-    "static/css/main.24435804.chunk.css",
+    "static/css/main.a28853e0.chunk.css",
     "static/js/main.97d95588.chunk.js"
   ]
 }
