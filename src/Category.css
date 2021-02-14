@@ -1,11 +1,8 @@
 .categoryItems {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  justify-content: space-evenly;
-  grid-gap: 2%;
-  margin-left: 40px;
-  margin-right: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1%;
 }
 
 .item {
