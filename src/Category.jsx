@@ -43,7 +43,7 @@ class Category extends React.Component {
                 {this.state.items.map(item => {
                     return (
                     <div key={`categoryItem-${item.link}`} className={"container"}>
-                        <h3>{item.name}</h3>
+                        <h4>{item.name}</h4>
                         <a href={item.link}>
                         <img
                             src={item.image}
@@ -52,7 +52,7 @@ class Category extends React.Component {
                             title={item.name}
                         />
                         </a>
-                        <h2>{item.price}</h2>
+                        <h4>{item.price}</h4>
                     </div>
                     );
                 })}
