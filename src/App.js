@@ -11,7 +11,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       shouldShowSpinner: true,
-      categories: []
+      categories: [],
+      serverError: false,
     }
   }
   componentDidMount() {
@@ -26,13 +27,15 @@ class App extends React.Component {
         this.setState({
             ...this.state, 
             shouldShowSpinner: false, 
-            categories: result.message
+            categories: result.message,
+            serverError: result.message.length === 0
         });
     })
     .catch(error => {
         this.setState({
             ...this.state, 
-            shouldShowSpinner: false
+            shouldShowSpinner: false,
+            serverError: true
         });
     })
   } 
@@ -41,6 +44,9 @@ class App extends React.Component {
     <DateHeader />
     <Spinner status = {this.state.shouldShowSpinner}/>
     <Routes categories={this.state.categories} />
+    {this.state.serverError ? (<div>
+      אוי לא! כנראה שישנה בעיה עם השרת. אנא נסו שנית מאוחר יותר.
+    </div>) : null }
   </div>
   }
 }
