@@ -5,6 +5,11 @@ import './Categories.css';
 class Categories extends React.Component {
     render() {
         if (this.props.categories === null) return null;
+        if (this.props.categories.length === 0) {
+            return <div>
+                Whoops! Something went wrong in the server. Please try again later.
+            </div>
+        }
         return <div className="categories">
             {this.props.categories && this.props.categories.map(category => (
             <div className="container">
