@@ -14,30 +14,7 @@ class App extends React.Component {
       serverError: false,
     }
   }
-  componentDidMount() {
-    if (this.state.categories.length === 0) {
-        this.fetchData();
-    }
-  }
-  fetchData() {
-    fetch(endpoint)
-    .then(response => response.json())
-    .then(result => {
-        this.setState({
-            ...this.state, 
-            shouldShowSpinner: false, 
-            categories: result.message,
-            serverError: result.message.length === 0
-        });
-    })
-    .catch(error => {
-        this.setState({
-            ...this.state, 
-            shouldShowSpinner: false,
-            serverError: true
-        });
-    })
-  } 
+  
   render() {
     return <div className="App">
     <DateHeader />
