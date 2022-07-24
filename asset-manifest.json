@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/julOnSaleReact/static/css/main.704ca068.css",
-    "main.js": "/julOnSaleReact/static/js/main.c365ba97.js",
+    "main.css": "/julOnSaleReact/static/css/main.1d480c82.css",
+    "main.js": "/julOnSaleReact/static/js/main.a1aafe5f.js",
     "static/js/377.e8ae0c8b.chunk.js": "/julOnSaleReact/static/js/377.e8ae0c8b.chunk.js",
     "static/media/Acme-Regular.ttf": "/julOnSaleReact/static/media/Acme-Regular.9f25ca8b2435fcab381a.ttf",
     "index.html": "/julOnSaleReact/index.html",
-    "main.704ca068.css.map": "/julOnSaleReact/static/css/main.704ca068.css.map",
-    "main.c365ba97.js.map": "/julOnSaleReact/static/js/main.c365ba97.js.map",
+    "main.1d480c82.css.map": "/julOnSaleReact/static/css/main.1d480c82.css.map",
+    "main.a1aafe5f.js.map": "/julOnSaleReact/static/js/main.a1aafe5f.js.map",
     "377.e8ae0c8b.chunk.js.map": "/julOnSaleReact/static/js/377.e8ae0c8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.704ca068.css",
-    "static/js/main.c365ba97.js"
+    "static/css/main.1d480c82.css",
+    "static/js/main.a1aafe5f.js"
   ]
 }
