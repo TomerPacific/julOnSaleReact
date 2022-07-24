@@ -1,6 +1,5 @@
 import React from 'react';
 import DateHeader from './DateHeader';
-import Spinner from './Spinner';
 import './App.css';
 import Routes from './Routes';
 
@@ -42,7 +41,10 @@ class App extends React.Component {
   render() {
     return <div className="App">
     <DateHeader />
-    <Spinner status = {this.state.shouldShowSpinner}/>
+    <div>
+			<h4>Avo 🥑 (formerly known as Jul) has shut its service</h4>
+			<h4>Like Avo, this project has gone into the sunset 🌇 </h4>
+		</div>
     <Routes categories={this.state.categories} />
     {this.state.serverError ? (<div>
       אוי לא! כנראה שישנה בעיה עם השרת. אנא נסו שנית מאוחר יותר.
